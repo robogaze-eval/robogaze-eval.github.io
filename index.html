@@ -305,11 +305,8 @@
               <a href="https://arxiv.org/pdf/2606.28385" target="_blank" rel="noopener noreferrer" class="pub-link">
                 <i class="fas fa-file-pdf"></i><span>Paper</span><small class="soon-badge" style="background:#059669;">PDF</small>
               </a>
-              <a href="#" onclick="return false;" class="pub-link is-disabled">
-                <i class="fab fa-github"></i><span>Code</span><small class="soon-badge">Coming Soon</small>
-              </a>
-              <a href="#" onclick="return false;" class="pub-link is-disabled">
-                <i class="fas fa-database"></i><span>RoboGazeBench</span><small class="soon-badge">Coming Soon</small>
+              <a href="https://github.com/cair-vinuni/RoboGaze" target="_blank" rel="noopener noreferrer" class="pub-link">
+                <i class="fab fa-github"></i><span>Code</span><small class="soon-badge" style="background:#111;">cair-vinuni/RoboGaze</small>
               </a>
               <a href="#exp_res" class="pub-link"><i class="fas fa-play"></i><span>See it in action</span></a>
             </div>
@@ -404,7 +401,7 @@
             <div style="display:flex; gap:1.5rem; align-items:flex-start; padding:1.1rem 0;">
               <div class="contrib-num"><span>2</span></div>
               <div>
-                <p class="serif-body" style="font-size:1rem; font-weight:700; color:#111; margin:0 0 0.3rem;">RoboGazeBench</p>
+                <p class="serif-body" style="font-size:1rem; font-weight:700; color:#111; margin:0 0 0.3rem;">A human-validated robot-video benchmark</p>
                 <p class="serif-body" style="font-size:0.95rem; color:#444; line-height:1.8; margin:0;">A human-validated benchmark of <strong>382</strong> generated robot-manipulation videos with temporally localized glitch annotations, severity labels, and diagnostic descriptions across simulation and real-world domains.</p>
               </div>
             </div>
@@ -475,7 +472,7 @@
 
         <!-- Framework figure -->
         <div class="figure-card" style="margin-top:0.5rem;">
-          <img src="static/images/pipeline_v4444_200.png" alt="The RoboGaze three-phase framework" loading="lazy">
+          <img src="static/images/pipeline.png" alt="The RoboGaze three-phase framework" loading="lazy">
           <hr class="figure-divider">
           <p class="figure-caption">
             <span class="figure-caption-label">The RoboGaze framework.</span>
@@ -565,7 +562,7 @@
       <h2 class="display-h2">Catching glitches in the act, across three datasets.</h2>
 
       <!-- Benchmark splits -->
-      <p class="label-sm" style="margin:0 0 0.9rem;">RoboGazeBench &mdash; 382 clips, three splits</p>
+      <p class="label-sm" style="margin:0 0 0.9rem;">Benchmark &mdash; 382 clips, three splits</p>
       <div class="split-row">
         <div class="split-card">
           <div class="ico"><i class="fas fa-cube"></i></div>
@@ -595,7 +592,7 @@
 
       <!-- Main results table -->
       <div style="border-top:0.5px solid #e0ddd8; margin:3rem 0 2.5rem;"></div>
-      <p class="label-sm" style="margin:0 0 0.9rem;">Main results on RoboGazeBench (averaged across the three splits)</p>
+      <p class="label-sm" style="margin:0 0 0.9rem;">Main results averaged across the three splits</p>
       <div class="rg-table-wrap">
         <table class="rg-table">
           <caption>V, CoT, and RG denote vanilla prompting, chain-of-thought prompting, and the same backbone wrapped by RoboGaze. Green badges show the absolute gain of RoboGaze over the stronger baseline. Higher is better; Clean is clean-clip accuracy.</caption>
