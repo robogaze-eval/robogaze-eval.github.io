@@ -435,3 +435,16 @@ footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wr
 .keep-together{white-space:nowrap}.public-affiliations .affiliation-break{display:block}.public-affiliations span{display:inline-block;max-width:100%;vertical-align:top}@media(max-width:720px){.public-affiliations .affiliation-break{display:none}}
 
 @media(max-width:720px){.affiliation-logo,.affiliation-logo-dfki,.affiliation-logo-stuttgart,.affiliation-logo-imprs-is{flex-basis:140px;height:54px}.affiliation-logo img{width:140px;height:50px;max-height:50px}}
+
+/* Keep all seven affiliations on one desktop row. */
+@media(min-width:901px){
+ .affiliation-logos{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:18px}
+ .affiliation-logo,.affiliation-logo-dfki,.affiliation-logo-stuttgart,.affiliation-logo-imprs-is{width:100%;min-width:0;height:58px}
+ .affiliation-logo img{width:100%;max-width:100%;height:54px;max-height:54px}
+}
+@media(min-width:721px) and (max-width:900px){
+ .affiliation-logos{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:18px}
+ .affiliation-logo{grid-column:span 2;width:100%;min-width:0}
+ .affiliation-logo:nth-child(5){grid-column:2 / span 2}
+ .affiliation-logo img{width:100%;max-width:100%}
+}
