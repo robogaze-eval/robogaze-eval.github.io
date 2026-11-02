@@ -423,12 +423,15 @@ footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wr
 .public-authors span{display:inline-block;white-space:nowrap}.public-authors sup,.public-affiliations sup{font-size:.72em;color:#b4441f;margin-left:1px;line-height:0;vertical-align:super}.public-affiliations sup{margin-right:2px}
 .public-affiliations{display:block;margin:0;font-family:var(--serif,Georgia,serif);font-size:14px;line-height:1.85;color:var(--muted,#625d58);text-align:left}
 .public-affiliations span{display:inline}.project-leads{font-family:var(--serif,Georgia,serif);font-size:14px;text-align:left;margin:3px 0 0;color:var(--muted,#625d58)}
-.affiliation-logos{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:18px 24px;margin:20px 0 24px;padding-top:18px;border-top:1px solid #e4dfd8}
-.affiliation-logo{display:flex;align-items:center;justify-content:center;flex:0 1 132px;height:48px}
-.affiliation-logo img{display:block;max-width:100%;width:auto;height:auto;max-height:46px;object-fit:contain;mix-blend-mode:multiply}
-.affiliation-logo-vinuniversity img{max-height:44px}.affiliation-logo-darmstadt img{max-height:48px}
+.affiliation-logos{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:22px 26px;margin:20px 0 24px;padding-top:20px;border-top:1px solid #e4dfd8}
+.affiliation-logo{display:flex;align-items:center;justify-content:center;flex:0 0 150px;height:58px}
+.affiliation-logo img{display:block;width:150px;max-width:100%;height:54px;object-fit:contain;mix-blend-mode:multiply}
+.affiliation-logo-dfki,.affiliation-logo-stuttgart,.affiliation-logo-imprs-is{flex-basis:170px}
+.affiliation-logo-dfki img,.affiliation-logo-stuttgart img,.affiliation-logo-imprs-is img{width:170px}
 @media(max-width:720px){.public-authors{font-size:16px;line-height:1.8;margin-top:22px}.public-affiliations,.project-leads{font-size:13px}.affiliation-logos{gap:14px 20px}.affiliation-logo{flex-basis:120px;height:44px}.affiliation-logo img{max-height:42px}}
 
 .citation-code{padding:24px;background:#f1eee8;border-radius:12px;overflow-x:auto;font-size:13px;line-height:1.7;white-space:pre}
 
 .keep-together{white-space:nowrap}.public-affiliations .affiliation-break{display:block}.public-affiliations span{display:inline-block;max-width:100%;vertical-align:top}@media(max-width:720px){.public-affiliations .affiliation-break{display:none}}
+
+@media(max-width:720px){.affiliation-logo,.affiliation-logo-dfki,.affiliation-logo-stuttgart,.affiliation-logo-imprs-is{flex-basis:140px;height:54px}.affiliation-logo img{width:140px;height:50px;max-height:50px}}
